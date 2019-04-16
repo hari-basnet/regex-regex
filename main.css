@@ -1,0 +1,31 @@
+input + p{
+    display: none;
+    color: orange;
+}
+label {
+    display: block;
+}
+input {
+    display: block;
+    padding: 8px 16px;
+    font-size: 1rem;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+}
+
+input.valid{
+    border-color: #36cc36;
+
+
+}
+
+.invalid{
+    border-color: orange;
+
+}
+
+input.invalid +p{
+    display: block;
+}
