@@ -1,13 +1,28 @@
+form{
+    display: flex;
+    flex-flow: column wrap;
+}
+
 input + p{
     display: none;
     color: orange;
+    text-align: center;
 }
+
+input.invalid +p{
+    display: block;
+    text-align: center;
+}
+
 label {
     display: block;
+    font-size: 1.2em;
+    margin: 0 auto;
 }
 input {
     display: block;
     padding: 8px 16px;
+    width: 40%;
     font-size: 1rem;
     margin: 10px auto;
     border-radius: 10px;
@@ -17,15 +32,18 @@ input {
 
 input.valid{
     border-color: #36cc36;
-
-
 }
 
 .invalid{
     border-color: orange;
-
 }
 
-input.invalid +p{
-    display: block;
+button{
+    border-radius: 10px;
+    background-color: #36cc36;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 40px;
+    width: 20%;
+    margin: 0 auto;
 }

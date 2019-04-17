@@ -18,14 +18,11 @@ function validate(field, regex){
     }else{
         field.className = 'invalid';
     }
-
 }
 
 // event listeners
 allInputs.forEach(element => {
     element.addEventListener('input', (e) => {
-
         validate(e.target, patterns[e.target.attributes.name.value]);
-
     })
 });
