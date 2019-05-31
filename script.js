@@ -6,6 +6,7 @@ const patterns = {
     password: /^[\w@-]{8,20}$/,
     bio: /^[a-z\d-]{8,50}$/,
     email:/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
+    
 
 };
 const allInputs = document.querySelectorAll('input');
